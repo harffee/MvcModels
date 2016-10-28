@@ -22,7 +22,7 @@ namespace MvcModels.Controllers
                 Role = Role.Guest}
         };
 
-        public ActionResult Index(int id = 1)
+        public ActionResult Index(int id)
         {
             Person dataItem = personData.Where(p => p.PersonId == id).First();
             return View(dataItem);
